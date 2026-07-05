@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="index.js"></script>
+        <script src="tailwind.config.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body class="flex justify-center gap-[80px] bg-bg-color text-text-color w-dvw px-5">
+        <main class="max-w-2xl">
+            <header id="home" class="flex flex-col justify-center h-dvh" data-nav-section>
+                <h1 class="header-title">Olá! Eu sou o <br><b>Gabriel Guerra!</b></h1>
+                <p class="header-subtitle">Desenvolvedor full-stack</p>
+                <div class="flex gap-4 items-center mt-5">
+                    <a href=""><i class="fa-brands fa-github fa-xl"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope fa-xl"></i></a>
+                </div>
+            </header>
+            <section id="about-me" class="h-dvh" data-nav-section>
+                <h2 class="section-title">Sobre mim</h1>
+                <p>Faço parte da diretoria de comunicação da Ecomp, empresa junior de computação da UFPR. Nela, eu desempenho diversas funções como a elaboração de artes para postagens, , contato com outras empresas. Além disso, também fazemos diversas capacit</p>
+                <h3 class="section-subtitle">Tecnologias</h3>
+                <div class="flex gap-5">
+                    <custom-badge icon_class="fa-brands fa-react" text="React"></custom-badge>
+                    <custom-badge icon_class="fa-brands fa-js" text="JavaScript"></custom-badge>
+                    <custom-badge icon_class="fa-brands fa-python" text="Python"></custom-badge>
+                    <custom-badge icon_class="fa-brands fa-c" text="C"></custom-badge>
+                    <custom-badge icon_class="fa-user fa-tailwind" text="Tailwind"></custom-badge>
+                    <custom-badge icon_class="fa-brands fa-linux" text="Linux"></custom-badge>
+                    <custom-badge icon_class="fa-brands fa-git" text="Git"></custom-badge>
+                    <custom-badge icon_class="fa-brands fa-github" text="GitHub"></custom-badge>
+                </div>
+            </section>
+            <section id="projects" class="h-dvh" data-nav-section>
+                <h2 class="section-title">Projetos</h2>
+                <div class="flex gap-5 flex-wrap">
+                    <custom-project-card 
+                        heading="ENEMQuest"
+                        subheading="Gerador de questões aleatórias do Enem"
+                        tech="JavaScript,React,Supabase"
+                        git_hub="">
+                    </custom-project-card>
+                </div>
+            </section>
+            <section id="experience" class="h-dvh" data-nav-section>
+                <h2 class="section-title">Experiência</h2>
+                <div class="flex gap-5">
+                    <custom-experience-card 
+                        job="Dev. Front-End (Voluntário)"
+                        company="Ecomp - Empresa Júnior da UFPR"
+                        start_date="07/2025"
+                        end_date="06/2026 "
+                        activities="Desenvolvimento de componentes React, Manutenção de código, Participação em reuniões com a equipe">
+                    </custom-experience-card>
+                    <custom-experience-card 
+                        job="Jovem Aprendiz"
+                        company="Systhex"
+                        start_date="02/2026"
+                        end_date="atualmente"
+                        activities="Desenvolvimento de componentes React, Manutenção de código, Participação em reuniões com a equipe">
+                    </custom-experience-card>
+                </div>
+            </section>
+            <footer id="contacts" class="h-dvh" data-nav-section>
+                <h2 class="section-title">Contato</h2>
+                <p>Tem um projeto em mente? Vamos conversar.</p>
+                <div class="flex gap-8 flex-wrap">
+                    <a href="" class="flex items-center gap-2"><i class="fa-brands fa-linkedin fa-xl"></i><span>LinkedIn</span></a>
+                    <a href="" class="flex items-center gap-2"><i class="fa-brands fa-github fa-xl"></i><span>GitHub</span></a>
+                    <a href="" class="flex items-center gap-2"><i class="fa-regular fa-envelope fa-xl"></i><span>Email</span></a>
+                </div>
+            </footer>
+        </main>
+        <aside class="sticky top-0 h-dvh">
+            <nav class="flex flex-col justify-center items-end text-end h-full">
+                <a href="#home" class="w-fit">Home</a>
+                <a href="#about-me" class="w-fit">Sobre mim</a>
+                <a href="#projects" class="w-fit">Projetos</a>
+                <a href="#experience" class="w-fit">Experiência</a>
+                <a href="#contacts" class="w-fit">Contatos</a>
+            </nav>
+        </aside>
+    </body>
+</html>
