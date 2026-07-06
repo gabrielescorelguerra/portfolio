@@ -8,6 +8,7 @@ export class ProjectCard extends HTMLElement {
         const subheading = this.getAttribute("subheading");
         const tech = this.getAttribute("tech").split(",");
         const gitHub = this.getAttribute("git_hub");
+        const siteLink = this.getAttribute("site_link");
 
         this.innerHTML = `
         <div class="card flex flex-col gap-2">
@@ -17,13 +18,16 @@ export class ProjectCard extends HTMLElement {
             </header>
             <main>
                 <h4>Tecnologias</h4>
-                <div class="flex gap-2 flex-wrap">
+                <div class="flex gap-3 flex-wrap">
                     ${tech.map((t) => `<p>${t}</p>`).join("")}
                 </div>
             </main>
             <footer>
                 <h4>Links</h4>
-                <a class="flex flex-row gap-1 items-center" href="${gitHub}"><i class="fa-brands fa-github"></i>Github</a>
+                <div class="flex gap-3 flex-wrap">
+                    ${gitHub ? `<a class="flex flex-row gap-1 items-center" href="${gitHub}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>` : ''}
+                    ${siteLink ? `<a class="flex flex-row gap-1 items-center" href="${siteLink}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i>Ver Projeto</a>` : ''}
+                </div>
             </footer>
         </div>
         `;

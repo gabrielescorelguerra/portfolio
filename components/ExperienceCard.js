@@ -8,7 +8,7 @@ export class ExperienceCard extends HTMLElement {
         const company = this.getAttribute("company");
         const start_date = this.getAttribute("start_date");
         const end_date = this.getAttribute("end_date");
-        const activities = this.getAttribute("activities").split(",");
+        const activities = this.getAttribute("activities").split(";");
         const gitHub = this.getAttribute("git_hub");
 
         this.innerHTML = `

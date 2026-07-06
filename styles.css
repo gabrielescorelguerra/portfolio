@@ -63,7 +63,7 @@ a:hover::after {
 
 /* classes */
 
-section, footer {
+main > section, main > footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,4 +124,28 @@ section, footer {
 
 .card a, .card li {
     font-size: 0.8rem;
+}
+
+li {
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    a, p {
+        font-size: 0.8rem;
+    }
+
+    .header-title {
+    font-size: 1.8rem;
+  }
+
+    .header-subtitle {
+        font-size: 0.75rem;
+        font-weight: 200;
+    }
+
+    .section-title {
+        font-size: 1.80rem;
+        font-weight: 600;
+    }
 }
