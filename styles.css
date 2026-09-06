@@ -91,6 +91,10 @@ main > section, main > footer {
     margin-top: 20px;
 }
 
+section {
+    margin-top: 40px;
+}
+
 /* card */
 
 .card {
@@ -127,7 +131,7 @@ main > section, main > footer {
 }
 
 li {
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 @media (max-width: 768px) {

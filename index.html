@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body class="flex justify-center gap-[80px] bg-bg-color text-text-color w-dvw px-5">
-        <main class="max-w-2xl">
+        <main class="max-w-2xl flex flex-col gap-80">
             <header id="home" class="flex flex-col justify-center h-dvh" data-nav-section>
                 <h1 class="header-title">Olá! Eu sou o <br><b>Gabriel Guerra!</b></h1>
                 <p class="header-subtitle">Desenvolvedor full-stack</p>
@@ -48,11 +48,31 @@
                         git_hub="https://github.com/gabrielescorelguerra/EnemQuest"
                         site_link="https://enem-quest.vercel.app/">
                     </custom-project-card>
+                    <custom-project-card 
+                        heading="Finance Manager"
+                        subheading="Sistema de gerenciamento financeiro pessoal, "
+                        tech="Google Sheets,Python,FastAPI,Gemini,Telegram"
+                        git_hub="https://github.com/gabrielescorelguerra/finance-manager">
+                    </custom-project-card>
+                    <custom-project-card 
+                        heading="Geg-tools"
+                        subheading="Conjunto de comandos CLI e bibliotecas pessoais"
+                        tech="Python,Typer,Gemini"
+                        git_hub="https://github.com/geg-tools">
+                    </custom-project-card>
                 </div>
             </section>
             <section id="experience" class="h-dvh" data-nav-section>
                 <h2 class="section-title">Experiência</h2>
                 <div class="flex flex-col gap-5">
+                     <custom-experience-card 
+                        job="Estagiário em desenvolvimento e automação com IA"
+                        company="Tecnoponto"
+                        start_date="07/2026"
+                        end_date="atualmente"
+                        activities="Desenvolvimento de scripts para transformar conhecimentos corporativos em conteúdo para alimentar agente de IA.;Desenvolvimento de agentes de IA para auxiliar no atendimento a clientes, na triagem de chat e em processos administrativos.
+;Participação na definição de arquitetura de software, incluindo elaboração de diagramas de arquitetura.;Desenvolvimento e integração de soluções utilizando LLMs, APIs e MCP.;Desenvolvimento com Python, utilizando bibliotecas e frameworks como Selenium, BeautifulSoup, FastAPI e Google GenAI.">
+                    </custom-experience-card>
                     <custom-experience-card 
                         job="Dev. Front-End (Voluntário)"
                         company="Ecomp - Empresa Júnior da UFPR"
